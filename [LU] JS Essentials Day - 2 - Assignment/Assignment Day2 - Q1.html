@@ -1,0 +1,34 @@
+<html>
+  <head>
+     <title>Assignment Answer - 1</title> 
+     <script>
+         function TodayDate()
+         {
+            var DaysofWeek = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]; 
+            var date = new Date();
+            var day  = DaysofWeek[date.getDay()]; //returns value from 0 to 6 where 0 = sunday , 1 = monday and so on..
+            var Hours = date.getHours();          // returns value from 0 to 23
+            var Minutes = date.getMinutes();      // returns value from 0 to 59
+            var Seconds = date.getSeconds();      // returns value from 0 to 59
+            Hours = (Hours < 10)? "0" + Hours: Hours;
+            Minutes = (Minutes < 10)? "0" + Minutes: Minutes;
+            Seconds = (Seconds < 10)? "0" + Seconds: Seconds;       // Using conditional Operator "?:"
+            var Ap;
+            if (Hours <= 12){        // Using if-else Statement to check a condition to get the AM and PM value.
+               Ap = " AM ";
+            }
+            else{
+               Ap = " PM ";
+            }
+            document.getElementById('demo').innerHTML= "Today is : " + day;   
+            document.getElementById('sample').innerHTML = "Current time is : " + Hours + " " + Ap + ":" + Minutes + ":" + Seconds;
+         } 
+    </script>
+  </head>
+  <body>
+     <p>Click below button to get the Day and Time</p>
+     <button onclick="TodayDate()">Click me!</button>
+     <p id="demo"></p>
+     <p id="sample"></p>
+  </body>
+</html>

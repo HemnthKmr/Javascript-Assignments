@@ -1,0 +1,27 @@
+<html>
+  <head>
+     <title>Assignment Answer - 2</title> 
+     <script>
+         function TodayDate()
+         {
+            var DaysofWeek = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]; 
+            var date = new Date();
+            var day  = DaysofWeek[date.getDay()];
+            var Time = date.toLocaleTimeString();
+            document.getElementById('demo').innerHTML= "Today is : " + day;   
+            document.getElementById('sample').innerHTML = "Current time is : " + Time;
+         } 
+         function Print()
+         {
+            window.print();
+         }
+    </script>
+  </head>
+  <body>
+     <p>Click below button to get the Day and Time</p>
+     <button onclick="TodayDate()">Click me!</button>
+     <p id="demo"></p>
+     <p id="sample"></p>
+     <button onClick="Print()">Print Screen</button>
+  </body>
+</html>
