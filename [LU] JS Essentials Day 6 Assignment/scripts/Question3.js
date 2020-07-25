@@ -1,3 +1,5 @@
+//Comment Question1 and Question2 for Question 3 to run.
+
 // Welcome Message
 
 let input = prompt("Enter your name:");
@@ -26,8 +28,7 @@ let darkmode1 = document.getElementById('Darkbut');
 darkmode1.onclick = DarkMode = () => {
     if (darkmode.getAttribute('Dark') != "black")
     {
-        darkmode.classList.toggle('Darkmodeon');
-        
+        darkmode.classList.toggle('Darkmodeon');   
     }
     else{
         darkmode.classList.toggle('Darkmodeoff');
