@@ -1,0 +1,128 @@
+body{
+    background-image: url("bgimage.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#title{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 70px;
+    background: -webkit-linear-gradient(magenta,blue);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+div{
+    text-align: center;
+}
+
+#quote{
+    padding-top: 50px;
+    text-align: center;
+    /* font-family: 'Franklin Gothic Medium'; */
+    font-family: 'Bellota', cursive;
+    font-size: 25px;
+    color: black;   
+}
+
+#button{
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 25px;
+    text-align: center;
+    border-color: purple;
+    color:black;
+    outline: none;
+    font-family: 'Bellota', cursive;
+    background-color:transparent;
+}
+
+#button:hover{
+  
+  transform: scale(1.1)
+}
+
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: transparent;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a  {
+    float: left;
+    display: block;
+    color: blueviolet;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Bellota', cursive;
+  }
+
+  #symbol{
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 5px 16px;
+    text-decoration: none;
+    font-size: 40px;
+    background: -webkit-linear-gradient(magenta,blue);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    border-radius: 40px;
+    background-color: rgba(92, 25, 121, 0.1);
+    color: rgb(221, 17, 177);
+    
+  }
+
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    background-color: rgba(139, 15, 139, 0.945);
+    color: white;
+    border-radius: 2em;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  #symbol{
+    display:none;
+  }
+    .topnav a:not(:nth-child(2)) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+    
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
